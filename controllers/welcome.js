@@ -1,12 +1,10 @@
 const form = require('../views/welcome')
 const SiteInfo = require('../models/siteInfo')
-let itWorked
+let siteInformation
 
 const welcome = () => {
-  console.log('workin o no', itWorked);
-  itWorked = new NewSite(NewSite)
-  return itWorked
-  console.log('damnit', itWorked);
+  siteInformation = new NewSite(NewSite)
+  return siteInformation
 }
-
-module.exports = welcome && {itWorked}
+console.log(siteInformation)
+module.exports = welcome && {siteInformation}
