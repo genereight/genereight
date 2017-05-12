@@ -1,4 +1,21 @@
 {
+  "name": "genereight",
+  "version": "0.0.1",
+  "description": "Framework to help users build websites using input boxes",
+  "author": "DeBray Carpenter",
+  "license": "MIT",
+  "bugs": {
+  "url": "https://github.com/DeBrayC/genereight/issues"
+},
+"homepage": "https://github.com/DeBrayC/genereight#readme",
+  "scripts": {
+    "start": "node server",
+    "test": "nyc mocha"
+  },
+  "repository": {
+  "type": "git",
+  "url": "git+https://github.com/DeBrayC/genereight.git"
+},
   "dependencies": {
     "body-parser": "^1.17.1",
     "chai": "^3.5.0",
@@ -10,5 +27,8 @@
     "handlebars": "^4.0.8",
     "hbs": "^4.0.1",
     "hbs-form-helpers": "0.0.6"
+  },
+  "devDependencies": {
+    "nyc": "^10.3.2"
   }
 }

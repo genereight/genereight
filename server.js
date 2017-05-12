@@ -49,7 +49,7 @@ app.get('/welcome', function(req, res){
 app.post('/submit', (req, res) => {
   console.log(req.body);
   let itWorked = req.body
-  fs.writeFile("itWorked.json", itWorked, (err) => {
+  fs.writeFile("itWorked.json", JSON.stringify(itWorked), (err) => {
     if (err){
       console.error(err);
       return
