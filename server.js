@@ -7,7 +7,8 @@ const SiteInfo = require('./models/siteInfo')
 const welcome = require('./controllers/welcome')
 const {itWorked} = require('./controllers/welcome')
 const Handlebars = require('Handlebars')
-let fs = require('fs')
+const fs = require('fs')
+
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 app.set('port', process.env.PORT || 3000)
@@ -48,16 +49,16 @@ app.get('/welcome', function(req, res){
 });
 app.post('/submit', (req, res) => {
   console.log(req.body);
-  let itWorked = req.body
-  fs.writeFile("itWorked.json", itWorked, (err) => {
+  let siteInformation = req.body
+  fs.writeFile("siteInformation.json", JSON.stringify(siteInformation), (err) => {
     if (err){
       console.error(err);
       return
     } else {
-      console.log('itWorked.json File Created');
+      console.log('siteInformation.json File Created');
     }
   })
-  res.render('index', {itWorked})
+  res.render('index', {siteInformation})
 
 })
 app.listen(app.get('port'), () => {
