@@ -5,7 +5,7 @@ const bodyParser = require('body-parser')
 const exphbs = require('express-handlebars');
 const SiteInfo = require('./models/siteInfo')
 const welcome = require('./controllers/welcome')
-const {itWorked} = require('./controllers/welcome')
+const {siteInformation} = require('./controllers/welcome')
 const Handlebars = require('Handlebars')
 const fs = require('fs')
 
@@ -31,10 +31,10 @@ const options = {
 app.use(express.static(path.join(__dirname, 'views') , options))
 
 app.get('/', function(req, res){
-  if(itWorked === undefined){
+  if(siteInformation === undefined){
     res.render('welcome')
   } else {
-    res.render('index', {itWorked})
+    res.render('index', {siteInformation})
   }
 
 });
