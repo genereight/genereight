@@ -9,8 +9,9 @@
 },
 "homepage": "https://github.com/DeBrayC/genereight#readme",
   "scripts": {
-    "start": "node server",
-    "test": "nyc mocha"
+    "start": "node server.js",
+    "test": "nyc mocha",
+    "lint": "eslint"
   },
   "repository": {
   "type": "git",
