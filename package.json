@@ -5,9 +5,9 @@
   "author": "DeBray Carpenter",
   "license": "MIT",
   "bugs": {
-  "url": "https://github.com/DeBrayC/genereight/issues"
+  "url": "https://github.com/genereight/genereight/issues"
 },
-"homepage": "https://github.com/DeBrayC/genereight#readme",
+"homepage": "https://github.com/genereight/genereight#readme",
   "scripts": {
     "start": "node server.js",
     "test": "nyc mocha",
@@ -15,7 +15,7 @@
   },
   "repository": {
   "type": "git",
-  "url": "git+https://github.com/DeBrayC/genereight.git"
+  "url": "git+https://github.com/genereight/genereight.git"
 },
   "dependencies": {
     "body-parser": "^1.17.1",
