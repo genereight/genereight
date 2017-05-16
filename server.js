@@ -60,7 +60,3 @@ app.post('/submit', (req, res) => {
   res.render('index', {siteInformation})
 
 })
-app.listen(app.get('port'), () => {
-
-app.get('port') + `; press Ctrl-C to terminate.`
-});
