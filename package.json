@@ -4,6 +4,9 @@
   "description": "Framework to help users build websites using input boxes",
   "author": "DeBray Carpenter",
   "license": "MIT",
+  "engines": {
+    "node": "6.9.4"
+  },
   "bugs": {
   "url": "https://github.com/genereight/genereight/issues"
 },
@@ -28,7 +31,6 @@
     "handlebars": "^4.0.8",
     "hbs": "^4.0.1",
     "hbs-form-helpers": "0.0.6",
-    "node": "6.10.3",
     "npm": "^3.10.10"
   },
   "devDependencies": {
