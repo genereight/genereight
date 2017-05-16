@@ -27,7 +27,9 @@
     "fs": "0.0.1-security",
     "handlebars": "^4.0.8",
     "hbs": "^4.0.1",
-    "hbs-form-helpers": "0.0.6"
+    "hbs-form-helpers": "0.0.6",
+    "node": "^4.1.2",
+    "npm": "^4.6.1"
   },
   "devDependencies": {
     "nyc": "^10.3.2"
