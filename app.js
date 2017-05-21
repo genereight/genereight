@@ -11,7 +11,7 @@ let fs = require('fs')
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
-const port = process.env.PORT || 5000;
+app.set('port', (process.env.PORT || 5000));
 app.listen(port, () => {
     console.log(`LIVE on ${port}`)
   })

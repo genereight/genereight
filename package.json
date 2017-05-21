@@ -8,18 +8,18 @@
     "node": "7.10.0"
   },
   "bugs": {
-  "url": "https://github.com/genereight/genereight/issues"
-},
-"homepage": "https://github.com/genereight/genereight#readme",
+    "url": "https://github.com/genereight/genereight/issues"
+  },
+  "homepage": "https://github.com/genereight/genereight#readme",
   "scripts": {
     "start": "node app.js",
     "test": "nyc mocha",
     "lint": "eslint"
   },
   "repository": {
-  "type": "git",
-  "url": "git+https://github.com/genereight/genereight.git"
-},
+    "type": "git",
+    "url": "git+https://github.com/genereight/genereight.git"
+  },
   "dependencies": {
     "body-parser": "^1.17.1",
     "chai": "^3.5.0",
@@ -34,6 +34,8 @@
     "npm": "^3.10.10"
   },
   "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.5.0",
     "nyc": "^10.3.2"
   }
 }
