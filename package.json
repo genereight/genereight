@@ -5,7 +5,8 @@
   "author": "DeBray Carpenter",
   "license": "MIT",
   "engines": {
-    "node": "6.9.4"
+    "node": "6.9.4",
+    "npm": "2.1.x"
   },
   "bugs": {
   "url": "https://github.com/genereight/genereight/issues"
