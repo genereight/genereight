@@ -12,7 +12,7 @@
 },
 "homepage": "https://github.com/genereight/genereight#readme",
   "scripts": {
-    "start": "node server.js",
+    "start": "node app.js",
     "test": "nyc mocha",
     "lint": "eslint"
   },
